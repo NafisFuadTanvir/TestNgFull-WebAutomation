@@ -58,4 +58,15 @@ public class Gmailservice {
          String myEmail= gmailservice.getLatestEmail();
         System.out.println(myEmail);
     }
+
+    // Helper method to extract reset URL from Gmail text snippet
+    public String extractResetLink(String emailSnippet){
+        if (emailSnippet.contains("https://")) {
+            int start = emailSnippet.indexOf("https://");
+            int end = emailSnippet.indexOf(" ", start);
+            if (end == -1) end = emailSnippet.length();
+            return emailSnippet.substring(start, end).trim();
+        }
+        throw new RuntimeException("Reset URL not found in email snippet");
+    }
 }
