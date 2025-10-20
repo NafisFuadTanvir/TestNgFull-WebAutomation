@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Full Automation Suite" verbose="1" parallel="false">
+
+    <!-- User Tests -->
+    <test name="User Flow">
+        <classes>
+            <class name="TestRunners.SignupTestRunner"/>
+            <class name="TestRunners.LoginTestRunnerCSV"/>
+            <class name="TestRunners.AddItemTestRunner"/>
+<!--            <class name="TestRunners.UserprofilePageRunner"/>-->
+<!--            <class name="TestRunners.ResetPasswordTestRunner"/>-->
+            <class name="TestRunners.LoginTestRunner"/>
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash; Admin Tests &ndash;&gt;-->
+<!--    <test name="Admin Flow">-->
+<!--        <parameter name="email" value="admin@test.com"/>-->
+<!--        <parameter name="password" value="admin123"/>-->
+<!--        <classes>-->
+<!--            <class name="TestRunners.AdminLoginTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

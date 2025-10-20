@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class SignupTestRunner extends Setup {
 
-    @Test
+    @Test(description = "user can signup properly")
     public void runSignupTest() throws IOException, ParseException {
         SignupPage signuppage= new SignupPage(driver);
         Gmailservice gmailservice=new Gmailservice();

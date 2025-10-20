@@ -24,11 +24,27 @@ dependencies {
 
     // https://mvnrepository.com/artifact/commons-configuration/commons-configuration
     implementation("commons-configuration:commons-configuration:1.10")
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
+    implementation("org.apache.commons:commons-csv:1.14.1")
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation("io.qameta.allure:allure-testng:2.30.0")
 }
 
 test {
-    useTestNG(){
+    useTestNG() {
+
+        if (project.hasProperty("email") && project.hasProperty("password")) {
+            systemProperties["email"] = project.property("email")
+            systemProperties["password"] = project.property("password")
+        }
 
 
+        if (project.hasProperty("suite")) {
+            systemProperties.put("suite",project.property("suite"))
+        } else {
+
+            suites './src/test/resources/suite.xml'
+        }
     }
 }

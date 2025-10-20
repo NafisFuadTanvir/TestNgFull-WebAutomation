@@ -2,15 +2,14 @@ package configue;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
 
 public class Setup {
    public  WebDriver driver;
-    @BeforeTest
+    @BeforeClass(alwaysRun = true)
     public void setup(){
       driver=new EdgeDriver();
       driver.manage().window().maximize();
@@ -19,7 +18,7 @@ public class Setup {
 
     }
 
-    @AfterTest
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
 
         //driver.quit();
