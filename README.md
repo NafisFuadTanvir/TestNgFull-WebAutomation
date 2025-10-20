@@ -23,3 +23,34 @@
 11. Now register more 3 users getting data from a CSV file
 
 12. Now login as admin and get all the users from user table and write them in a text file.
+
+## How to Run This Project
+Before running the project, make sure you have:
+
+1:- Java JDK 21+ installed
+
+2:Gradle installed (or use Gradle wrapper included in the project)
+
+### Project Setup
+
+1-Clone the repository
+
+2-Open the project in your IDE
+
+3-Install dependencies (The project uses Gradle, dependencies are defined in build.gradle.)
+
+4-Run from Gradle :- ./gradlew clean test -Pemail="your_test_email@gmail.com" -Ppassword="your_password"
+
+## Alure report of this Automation Project
+
+<img width="1872" height="852" alt="image" src="https://github.com/user-attachments/assets/998a56d4-2cb0-4046-93b1-3ecca0bc8c3b" />
+
+<img width="858" height="880" alt="image" src="https://github.com/user-attachments/assets/1432384a-e548-4332-8238-164f75358de7" />
+
+### vedio demonastration link:- 
+link:- 
+
+
+
+
+
