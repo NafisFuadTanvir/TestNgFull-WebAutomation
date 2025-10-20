@@ -48,7 +48,8 @@ Before running the project, make sure you have:
 <img width="858" height="880" alt="image" src="https://github.com/user-attachments/assets/1432384a-e548-4332-8238-164f75358de7" />
 
 ### vedio demonastration link:- 
-link:- 
+
+link:-  https://drive.google.com/drive/folders/1R5E39gwfWrRTHHBwtky19XMuX-9Nk4pm?dmr=1&ec=wgc-drive-globalnav-goto
 
 
 
